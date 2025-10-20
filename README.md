@@ -203,20 +203,28 @@ else:                # Noche: 600-1800W
 ```
 # 1. Raspberry envía datos
 python3 power_meter_simulator.py
-
+```
+![](https://raw.githubusercontent.com/Er1c-0Q/Contador_electrico_inteligente_con_alertas/refs/heads/main/Capturas/power_simulador.png)
+```
 # 2. Bridge recibe
 python3 simple_bridge.py
-
+```
+![](https://raw.githubusercontent.com/Er1c-0Q/Contador_electrico_inteligente_con_alertas/refs/heads/main/Capturas/bridge.png)
+```
 # 3. InfluxDB guarda
 python3 mqtt_to_influx.py
-
+```
+![](https://raw.githubusercontent.com/Er1c-0Q/Contador_electrico_inteligente_con_alertas/refs/heads/main/Capturas/mqtt_influx.png)
+```
 # 4. Consulta datos
 influx query 'from(bucket: "sensores") |> range(start: -5m)'
-
+```
+![](https://raw.githubusercontent.com/Er1c-0Q/Contador_electrico_inteligente_con_alertas/refs/heads/main/Capturas/.png)
+```
 # 5. Grafana accesible
 http://[IP-EC2]:3000
 ```
-
+![](https://raw.githubusercontent.com/Er1c-0Q/Contador_electrico_inteligente_con_alertas/refs/heads/main/Capturas/grafana.png)
 
 
 
