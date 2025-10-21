@@ -219,7 +219,7 @@ python3 mqtt_to_influx.py
 # 4. Consulta datos
 influx query 'from(bucket: "sensores") |> range(start: -5m)'
 ```
-![](https://raw.githubusercontent.com/Er1c-0Q/Contador_electrico_inteligente_con_alertas/refs/heads/main/Capturas/.png)
+![](https://raw.githubusercontent.com/Er1c-0Q/Contador_electrico_inteligente_con_alertas/refs/heads/main/Capturas/consulta_datos.png)
 ```
 # 5. Grafana accesible
 http://[IP-EC2]:3000
