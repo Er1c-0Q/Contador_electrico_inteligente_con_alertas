@@ -23,11 +23,6 @@ graph TB
         E
     end
 ```
-Sensor Simulado → MQTT/TLS → AWS IoT → Bridge Local → InfluxDB → Grafana
-     ↓               ↓           ↓          ↓           ↓         ↓
-  Generación      Transmisión  Broker    Forward    Almacenaje  Visualización
-   de datos        Segura     Central    Local        TS       Tiempo Real
-
 
 # ⚙️ Instalación y Configuración
 
@@ -91,7 +86,8 @@ python3 mqtt_to_influx.py
 # Terminal 3 - Raspberry: Simulador
 python3 power_meter_simulator.py
 ```
-
+![](https://raw.githubusercontent.com/Er1c-0Q/Contador_electrico_inteligente_con_alertas/refs/heads/main/Capturas/Linea%20de%20tiempo%20-%20Página%2032.png)
+   
 ## Scripts Principales
 
 **1. power_meter_simulator.py**
